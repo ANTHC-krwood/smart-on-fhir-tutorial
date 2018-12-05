@@ -29,6 +29,7 @@
           var gender = patient.gender;
           
           var identifier = '';
+          var nametext = '';
           var fname = '';
           var lname = '';
 
@@ -39,6 +40,7 @@
           
           //identifier = patient.identifier[0].value;
           identifier = patient.identifier[0];
+          nametext = patient.name[0].text.join(' ');
 
           var height = byCodes('8302-2');
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
@@ -50,6 +52,7 @@
           p.birthdate = patient.birthDate;
           p.gender = gender;
           p.identifier = identifier;
+          p.nametext = nametext;
           p.fname = fname;
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
@@ -83,6 +86,7 @@
       lname: {value: ''},
       gender: {value: ''},
       identifier: {value: ''},
+      nametext: {value: ''},
       birthdate: {value: ''},
       height: {value: ''},
       systolicbp: {value: ''},
