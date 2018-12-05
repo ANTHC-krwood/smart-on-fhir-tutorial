@@ -27,8 +27,8 @@
         $.when(pt, obv).done(function(patient, obv) {
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
-          var identifier = patient.identifier.value;
-
+          
+          var identifier = '';
           var fname = '';
           var lname = '';
 
@@ -36,6 +36,8 @@
             fname = patient.name[0].given.join(' ');
             lname = patient.name[0].family.join(' ');
           }
+          
+          identifier = patient.identifier[0].value;
 
           var height = byCodes('8302-2');
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
