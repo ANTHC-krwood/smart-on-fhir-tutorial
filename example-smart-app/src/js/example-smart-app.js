@@ -89,7 +89,7 @@
       lname: {value: ''},
       gender: {value: ''},
       identifier: {value: ''},
-      language: {value: ''},
+      //language: {value: ''},
       nametext: {value: ''},
       birthdate: {value: ''},
       height: {value: ''},
@@ -134,7 +134,7 @@
     $('#fname').html(p.fname);
     $('#lname').html(p.lname);
     $('#identifier').html(p.identifier);
-    $('#language').html(p.language);    
+    //$('#language').html(p.language);    
     $('#nametext').html(p.nametext);
     $('#gender').html(p.gender);
     $('#birthdate').html(p.birthdate);
