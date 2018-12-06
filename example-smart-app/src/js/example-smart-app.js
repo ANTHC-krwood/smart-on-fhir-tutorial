@@ -28,7 +28,7 @@
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
           
-          var language = "Hello";
+          var language = '123';
           var identifier = '';
           var nametext = '';
           var fname = '';
