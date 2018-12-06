@@ -29,7 +29,7 @@
           var gender = patient.gender;
           
           //var language = '';
-          var identifier = '';
+          //var identifier = '';
           var nametext = '';
           var fname = '';
           var lname = '';
@@ -42,7 +42,7 @@
           //identifier = patient.identifier[0].value;
           //identifier = patient.identifier[0];
           //identifier = patient.identifier.value;
-          identifier = patient.identifier.use;
+          //identifier = patient.identifier.use;
           
           nametext = patient.name[0].text;
           
@@ -58,7 +58,7 @@
           var p = defaultPatient();
           p.birthdate = patient.birthDate;
           p.gender = gender;
-          p.identifier = identifier;
+          //p.identifier = identifier;
           p.nametext = nametext;
           p.fname = fname;
           p.lname = lname;
@@ -92,7 +92,7 @@
       fname: {value: ''},
       lname: {value: ''},
       gender: {value: ''},
-      identifier: {value: ''},
+      //identifier: {value: ''},
       //language: {value: ''},
       nametext: {value: ''},
       birthdate: {value: ''},
@@ -137,7 +137,7 @@
     $('#loading').hide();
     $('#fname').html(p.fname);
     $('#lname').html(p.lname);
-    $('#identifier').html(p.identifier);
+    //$('#identifier').html(p.identifier);
     //$('#language').html(p.language);    
     $('#nametext').html(p.nametext);
     $('#gender').html(p.gender);
