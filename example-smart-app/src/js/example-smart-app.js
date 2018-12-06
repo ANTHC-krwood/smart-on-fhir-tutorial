@@ -46,8 +46,9 @@
           
           nametext = patient.name[0].text;
           
-          //language = patient.communication.language; //cause of error?
-          language = patient.communication[0].language.text;
+          //language = patient.communication.language; 
+          //language = patient.communication[0].language.text;
+          language = patient.communication[0].coding.display;
 
           var height = byCodes('8302-2');
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
