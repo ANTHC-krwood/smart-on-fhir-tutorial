@@ -28,7 +28,7 @@
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
           
-          var language = '';
+          var language = 'Hello';
           var identifier = '';
           var nametext = '';
           var fname = '';
@@ -43,7 +43,7 @@
           identifier = patient.identifier[0];
           //nametext = patient.name[0].text.join(' ');
           nametext = patient.name[0].text;
-          language = patient.communication.language;
+          //language = patient.communication.language; //cause of error?
 
           var height = byCodes('8302-2');
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
