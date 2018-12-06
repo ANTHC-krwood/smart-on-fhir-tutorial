@@ -41,10 +41,13 @@
           
           //identifier = patient.identifier[0].value;
           //identifier = patient.identifier[0];
-          identifier = patient.identifier.value;
+          //identifier = patient.identifier.value;
+          identifier = patient.identifier.use;
           
           nametext = patient.name[0].text;
+          
           //language = patient.communication.language; //cause of error?
+          language = patient.communication.language.text;
 
           var height = byCodes('8302-2');
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
