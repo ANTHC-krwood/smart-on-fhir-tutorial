@@ -28,7 +28,7 @@
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
           
-          var language = 'Hello';
+          var language = '';
           var identifier = '';
           var nametext = '';
           var fname = '';
@@ -40,8 +40,9 @@
           }
           
           //identifier = patient.identifier[0].value;
-          identifier = patient.identifier[0];
-          //nametext = patient.name[0].text.join(' ');
+          //identifier = patient.identifier[0];
+          identifier = patient.identifier.value;
+          
           nametext = patient.name[0].text;
           //language = patient.communication.language; //cause of error?
 
